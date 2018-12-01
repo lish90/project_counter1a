@@ -1,0 +1,60 @@
+body {
+  counter-reset:pages;
+  background-color:#3f4b58;
+  color: #fff;
+  font:700 32px/1
+  margin:50 50 50 50px;
+  font-family:sans-serif;
+}
+a::before {
+  content:counter(pages);
+}
+section {
+  border:1px solid #636C78;
+  margin:0 80 0px;
+  opacity:0.5;
+  filter:opacity=45;
+  border-radius: 5px;
+}
+a {
+  counter-increment:pages;
+  border: 1px;
+  border-radius:5px;
+  border-style:groove;
+  box-shadow:10px colors.light.base;
+  margin: 15px;
+  font-size:40px;
+  color:white;
+  background-color:grey;
+}
+a:active {
+   color: yellow;
+ }
+h1{
+  margin: 0 0 80px;
+  font-size:60px;
+  color:white;
+  text-align:left;
+}
+h2{
+  margin: 0 0 32px;
+  font-size:30px;
+  color:white;
+  text-align:left;
+}
+
+
+/*a:hover
+border-color:white;
+color: #fff;
+border-width:60px ;
+*/
+
+
+/*#box {
+    margin: 60px;
+    background-color: #ffffff;
+    border: 1px solid blue;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
